@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AFILIAMEX - Inicio</title>
   <link rel="stylesheet" href="estilo.css">
+
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <h1>AFILIAMEX</h1>
     <p>Afíliate fácilmente al IMSS, INFONAVIT y AFORE</p>
     <nav>
@@ -21,12 +24,33 @@
   </header>
 
   <main>
-    <h2>Bienvenido a AFILIAMEX</h2>
-    <p>Tu camino al seguro social empieza aquí.</p>
+    <section data-aos="fade-up" data-aos-delay="200">
+      <h2>Bienvenido a AFILIAMEX</h2>
+      <p>Tu camino al seguro social empieza aquí.</p>
+    </section>
+
+    <section data-aos="fade-up" data-aos-delay="400">
+      <h3>✅ ¿Qué ofrecemos?</h3>
+      <p>Te ayudamos a afiliarte, cotizar, y asegurar tus derechos IMSS con atención personalizada.</p>
+    </section>
+
+    <section data-aos="fade-up" data-aos-delay="600">
+      <h3>🚀 Modalidad 40, Infonavit y Afore</h3>
+      <p>Optimiza tu ahorro y pensión con estrategias claras y sin complicaciones.</p>
+    </section>
   </main>
 
-  <footer>
+  <footer data-aos="fade-up" data-aos-delay="800">
     <p>© 2025 AFILIAMEX</p>
   </footer>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animación en milisegundos
+      once: true // solo se anima una vez
+    });
+  </script>
 </body>
 </html>
