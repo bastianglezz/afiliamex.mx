@@ -8,6 +8,44 @@
 
   <!-- AOS (Animate On Scroll) CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    .postit-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+      gap: 60px;
+    }
+
+    .postit {
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .postit img {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .postit h3 {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #003366;
+    }
+
+    .postit p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    @media (min-width: 768px) {
+      .postit-section {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <header data-aos="fade-down">
@@ -29,18 +67,33 @@
       <p>Tu camino al seguro social empieza aquí.</p>
     </section>
 
-    <section data-aos="fade-up" data-aos-delay="800">
-      <h3>✅ ¿Qué ofrecemos?</h3>
-      <p>Te ayudamos a afiliarte, cotizar, y asegurar tus derechos IMSS con atención personalizada.</p>
+    <section class="postit-section">
+      <div class="postit" data-aos="fade-up" data-aos-delay="600">
+        <img src="postit_1.png" alt="Post-it 1">
+        <h3>Protección</h3>
+        <p>Te afiliamos con cobertura médica total, IMSS y derechos asegurados.</p>
+      </div>
+
+      <div class="postit" data-aos="fade-up" data-aos-delay="1000">
+        <img src="postit_2.png" alt="Post-it 2">
+        <h3>Confianza</h3>
+        <p>Más de 15 años ayudando a miles de personas a tramitar su pensión.</p>
+      </div>
+
+      <div class="postit" data-aos="fade-up" data-aos-delay="1400">
+        <img src="postit_3.png" alt="Post-it 3">
+        <h3>Acompañamiento</h3>
+        <p>Te guiamos paso a paso, resolvemos dudas y gestionamos tus trámites.</p>
+      </div>
     </section>
 
-    <section data-aos="fade-up" data-aos-delay="1200">
+    <section data-aos="fade-up" data-aos-delay="1800">
       <h3>🚀 Modalidad 40, Infonavit y Afore</h3>
       <p>Optimiza tu ahorro y pensión con estrategias claras y sin complicaciones.</p>
     </section>
   </main>
 
-  <footer data-aos="fade-up" data-aos-delay="1600">
+  <footer data-aos="fade-up" data-aos-delay="2200">
     <p>© 2025 AFILIAMEX</p>
   </footer>
 
@@ -48,8 +101,8 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({
-      duration: 2000, // animación en milisegundos
-      once: true // solo se anima una vez
+      duration: 1500,
+      once: true
     });
   </script>
 </body>
